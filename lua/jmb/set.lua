@@ -18,6 +18,8 @@ vim.opt.backup = false
 local home_var = "HOME"
 if (vim.loop.os_uname().sysname ~= "Linux") then
     home_var = "HOMEPATH"
+else
+    vim.cmd [[ set clipboard+=unnamedplus ]]
 end
 vim.opt.undodir = os.getenv(home_var) .. "/.vim/undodir"
 
