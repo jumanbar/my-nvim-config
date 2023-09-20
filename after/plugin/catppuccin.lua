@@ -1,6 +1,5 @@
-
 -- local macchiato = require("catppuccin.palettes").get_palette "macchiato"
-local macchiato = require("catppuccin.palettes").get_palette "mocha"
+-- local macchiato = require("catppuccin.palettes").get_palette "mocha"
 
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
@@ -15,4 +14,3 @@ require("catppuccin").setup({
 -- Color =====
 
 vim.cmd.colorscheme "catppuccin"
-

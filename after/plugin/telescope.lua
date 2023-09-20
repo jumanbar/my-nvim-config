@@ -17,3 +17,4 @@ vim.keymap.set("n", "<leader>gS", function()
     local text = vim.fn.expand("<cWORD>")
     builtin.grep_string({ search = text })
 end)
+
