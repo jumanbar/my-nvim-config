@@ -1,5 +1,5 @@
--- local macchiato = require("catppuccin.palettes").get_palette "macchiato"
--- local macchiato = require("catppuccin.palettes").get_palette "mocha"
+-- Palette names/hex values:
+-- https://github.com/catppuccin/nvim/blob/main/lua/catppuccin/palettes/mocha.lua
 
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
