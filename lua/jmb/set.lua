@@ -10,12 +10,18 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOMEPATH") .. "/.vim/undodir"
-vim.opt.undofile = true
+
+local home_var = "HOME"
+if (vim.loop.os_uname().sysname ~= "Linux") then
+    home_var = "HOMEPATH"
+end
+vim.opt.undodir = os.getenv(home_var) .. "/.vim/undodir"
+
+-- vim.opt.undofile = true
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
