@@ -8,7 +8,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 
-vim.keymap.set("n", "J", "mzJ`z") -- Not sure about this one, really
+vim.keymap.set("n", "J", "mzJ`zl") -- Not sure about this one, really
 
 -- Keep cursor in the middle when doing big jumps up or down:
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
