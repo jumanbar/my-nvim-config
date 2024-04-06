@@ -1,5 +1,6 @@
-
 vim.g.mapleader = " "
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
 vim.keymap.set("n", "<C-a>", "ggVG") -- Select All
 vim.keymap.set("n", "<leader>wd", vim.cmd.Ex) -- Working Directory
 
@@ -26,6 +27,7 @@ vim.keymap.set("n", "<leader>Y", [["+yy]])
 -- Vim was right:
 vim.keymap.set("n", "Y", [[yy]])
 
+-- Format file:
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format) -- Requiere working LSP...
 
 -- Faster search & replace for the whole file

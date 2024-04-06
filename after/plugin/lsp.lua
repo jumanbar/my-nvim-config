@@ -1,3 +1,4 @@
+-- Instalar servidores ":Mason"
 local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(client, bufnr)
