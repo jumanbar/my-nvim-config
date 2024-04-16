@@ -35,3 +35,26 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.colorcolumn = "80"
 
+-- Columna a la izquierda de los números de línea, indicando errores
+vim.opt.signcolumn = 'yes'
+
+-- Opciones para mostrar (ciertos) caracteres en blanco:
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Splits screen to see all instances of substituions being updated while I 
+-- write the command:
+vim.opt.inccommand = 'split'
+
+-- Highlight line where the cursor is:
+vim.opt.cursorline = true
+
+--[[ Split view:
+-- CTRL+W v      Split vertically
+-- CTRL+W s      Split horizontally
+-- CTRL+W CTRL+o Restore original split (or keep only current split?)
+--]]
+
+vim.opt.scrolloff = 10
+
+

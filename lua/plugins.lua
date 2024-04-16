@@ -1,3 +1,7 @@
+--[[ CANDIDATOS
+--https://github.com/lewis6991/gitsigns.nvim
+--https://github.com/folke/trouble.nvim
+--]]
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -64,6 +68,8 @@ return require('packer').startup(function(use)
         }
 
         use { 'catppuccin/nvim', as = 'catppuccin' }
+
+        use 'lewis6991/gitsigns.nvim'
     end)
 
 
