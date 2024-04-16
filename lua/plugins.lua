@@ -56,6 +56,13 @@ return require('packer').startup(function(use)
 
         use 'nvim-treesitter/playground'
 
+        use {
+            'numToStr/Comment.nvim',
+            config = function()
+                require('Comment').setup()
+            end
+        }
+
         use { 'catppuccin/nvim', as = 'catppuccin' }
     end)
 
