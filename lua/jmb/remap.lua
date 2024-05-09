@@ -16,8 +16,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Cursor in the middle of screen
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Cursor in the middle of screen when using CTRL+d" })
 vim.keymap.set("n", "<C-f>", "<C-f>zz", { desc = "Cursor in the middle of screen when using CTRL+f" })
 vim.keymap.set("n", "<C-b>", "<C-b>zz", { desc = "Cursor in the middle of screen when using CTRL+b" })
-vim.keymap.set("n", "n", "nzzzv", { desc = "Cursor in the middle of screen when using n" })
-vim.keymap.set("n", "N", "Nzzzv", { desc = "Cursor in the middle of screen when using N" })
 
 -- CLIPBOARD ====
 vim.keymap.set({"n", "v"}, "<leader>p", [["+p]], { desc = "Cliboard" })
