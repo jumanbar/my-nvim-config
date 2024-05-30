@@ -53,3 +53,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
         vim.highlight.on_yank()
     end,
 })
+
+-- Experimental: un Esc más cómodo que Ctrl+C
+vim.keymap.set("i", "ññ", "<Esc>", { desc = "Doble eñe para ESC" })
