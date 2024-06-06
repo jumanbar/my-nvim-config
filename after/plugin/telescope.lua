@@ -33,6 +33,9 @@ vim.keymap.set("n", "<leader>ft", builtin.treesitter, { desc = "[F]ind [T]reesit
 -- Find selected text in project:
 vim.keymap.set("v", "<leader>fs", builtin.grep_string, { desc = "[F]ind [S]elected text in project" });
 
+-- Fuzzy look for text in buffer:
+vim.keymap.set("n", "<leader>fl", builtin.current_buffer_fuzzy_find, { desc = "[F]uzzy [L]ook for text in current buffer" });
+
 -- Find current word in project:
 vim.keymap.set("n", "<leader>fw", function()
     local text = vim.fn.expand("<cword>")
